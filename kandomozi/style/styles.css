@@ -1,0 +1,258 @@
+/* Navigáció */
+nav {
+    font-weight: 500;
+}
+
+#navbar-admin{
+    font-family:Georgia, Verdana, sans-serif;
+}
+/* Fejléc */
+#fejlec{    
+    height: 100vh;
+    min-height: 400px;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+/* index filmkepek */
+    .movie-show-container {
+        margin-top: 0;
+        padding: 0 10%;
+    }
+
+    .movie-show-container>h1 {
+        color: #000000;
+        text-align: left;
+        padding: 0 0 10px 0;
+    }
+
+    .movie-show-container>h3 {
+        color: #969696;
+        text-align: left;
+        padding: 0 0 10px 0;
+    }
+
+    .movie-show-container>h3:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 7%;
+        background: black;
+        position: relative;
+        bottom: -10px;
+    }
+
+    .movies-container {
+        display: grid;
+        grid-column-gap: 10px;
+        grid-template-columns: auto auto auto auto auto auto;
+        padding: 10px 0;
+    }
+
+    .movie-box {
+        position: relative;
+        margin: 10px 0;
+    }
+
+    .movie-box img {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    .movie-box .movie-info {
+        padding: 50% 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .7s ease;
+        background-color:black;
+    }
+
+    .movie-box:hover .movie-info {
+        opacity: 0.8;
+    }
+
+    .movie-info>h3 {
+        padding: 10px 0;
+        color:white;
+    }
+
+    .movie-info>a {
+        display: inline-block;
+        padding: 0.35em 1.2em;
+        border: 0.1em solid white;
+        border-radius: 0.13em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-weight: 300;
+        color:white;
+        text-align: center;
+        transition: all 0.2s;
+    }
+
+    .movie-info>a:hover {
+        color: black;
+        background-color: white;
+    }
+
+/* Filmek ajánló */
+    .filmekajanlo{
+        padding-top: 10px;
+        padding-bottom:10px;
+        padding-left: 120px;
+        padding-right:120px ;
+    }
+    .img-fluid{
+        max-height: auto;
+    }
+    
+
+
+/* Foglalás */
+    .cim-container{
+        background-color:grey;
+        margin-top:25px;
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-bottom:50px !important;
+        ;
+    }
+
+    .table-container{
+        margin-top:25px;
+        width: 90% !important ;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .foglalas-container{
+        margin-top:25px;
+        margin-left: 40px;
+        margin-right: 40px;
+        
+    }    
+    select[name=nap]{
+        padding: 6px;
+        background-color:grey;
+        color: darkred;
+        border: 2px solid black;
+        margin-left:20px !important;
+        margin-right:5px !important;
+    }
+    select[name=ora]{
+        padding: 6px;
+        background-color:grey;
+        color: darkred;
+        border: 2px solid black;
+        margin-right:5px !important;
+    }
+
+    input[type=text] {
+        background-color:grey;
+        font-size:18px;
+        margin:5px;
+    }
+
+    textarea[type=text] {
+        background-color:grey;
+    }
+    input[type=button] {
+        background-color: darkred;
+        font-size:20px;
+        padding-right:10px;
+        cursor: pointer;
+        
+    }
+
+/* Műsor */
+.aznap{
+    text-align: center;
+    color:white;
+}
+#datum{
+    margin-left:12px !important;    
+    background-color:grey !important;
+    color: darkred !important;
+    border: 2px solid black !important;
+    padding: 6px;
+}
+input[type=submit] {
+    background-color: darkred;
+    font-size:16px;
+    cursor: pointer;
+    
+}
+.musortabla{
+    border-collapse: collapse;
+    width: 98% !important ;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Kapcsolat */
+
+    .contact-us-container {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-areas: 'contact-form contact-form contact-info';
+        margin: 30px 15%;
+    }
+    
+    .contact-us-section {
+        overflow: hidden;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: darkred;
+    }
+    .contact-us-section h1 {
+        color:white;
+        padding: 20px 0;
+        margin-bottom: 20px;
+    }
+    .contact-us-section p {
+        color:white;
+    }
+    .contact-us-section1 {
+        grid-area: contact-form;
+    }
+
+    .contact-us-section1 form * {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .contact-us-section1 form button {
+        background-color:darkred;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .contact-us-section2 {
+        grid-area: contact-info;
+    }
+
+    .contact-us-section2 h3 {
+        color: white;
+        padding: 10px 0;
+        margin-bottom: 10px;
+    }
+
+   .contact-us-section2 p{
+       color:white;
+   }
+    #gmap_canvas {
+        width: 100%;
+        height: 400px;
+    }
